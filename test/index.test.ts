@@ -1,9 +1,9 @@
+import { expect, test } from "vitest";
 import {
   generateShortId,
   generateDeterministicShortId,
   generateTimeBasedShortId,
 } from "../src";
-import { expect, test } from "vitest";
 
 test("generates short ID of correct length", () => {
   expect(generateShortId(8)).toHaveLength(8);
